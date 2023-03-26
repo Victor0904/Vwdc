@@ -1,0 +1,864 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: 'Playfair Display', serif;box-sizing: border-box;
+}
+/***********************************Page accueil/navbar********************************************/
+body{
+  background-color: white;
+}
+.image {
+  width: 30%;
+}
+
+/* Barre de contact */
+.firstContact{
+  background-color: #252829;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 3em;
+  width: 100%;
+
+}
+
+.left{
+  margin-left: 60px;
+  width: 50%;
+}
+.right{
+  text-align: right;
+  width: 50%;
+  margin-right: 60px;
+}
+.firstIcones{
+  width: 30px;
+  margin-left: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Barre de contact */
+/* Barre de navigation */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 1.5em;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  color: #252829;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #6290C3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Barre de navigation */
+
+/* Barre de navigation Mobile*/
+.navbarResponsive{
+  background-color: white;
+  color: #252829;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 70px;
+
+}
+.navbarResponsive a{
+  color: #252829;
+  text-decoration: none;
+}
+
+.navbarItem{
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 30px;
+  transform: 5px;
+  
+}
+.navbarItem a {
+  color:#252829;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.navbarItem span {
+  color: #252829;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.responsiveImage{
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition-duration: 0.6s;
+
+}
+.responsiveImage:hover{
+ transform: rotate(90deg);
+ transition-duration: 0.6s;
+
+ 
+}
+
+.navbarItem a:hover {
+  color: #6290C3;
+  font-size: 18px;
+
+}
+
+
+
+/* Barre de navigation Mobile*/
+/* Acceuil présentation*/
+.Presentation{
+  background-color: #252829;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.presText{
+  color: white;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.presText a{
+  color: #6290C3;
+
+}
+h1{
+  color: #6290C3;
+}
+
+.preuve{
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #252829;
+  
+
+}
+.PreuveBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: solid 1px #252829;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.PreuveBox h2{
+color: #6290C3;
+margin-bottom: 5px;
+letter-spacing: 1px;
+text-decoration: underline;
+}
+.PreuveBox p{
+  font-size: 18px;
+}
+
+/* Acceuil présentation*/
+/* Acceuil présentation2*/
+.marketing {
+  
+  background-color: #252829;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+.PresMarketing {
+ color: white;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.PresMarketing p{
+  color: white;
+}
+
+/* Acceuil présentation2*/
+/* Pourquoi moi ?*/
+/* Pourquoi moi ?*/
+/* Footer*/
+                /* contact*/
+.contact{
+  background-color: #252829;
+  width: 100%;
+  color: white;
+
+
+}
+.contact h1{
+  color: #6290C3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.contact p{
+  text-align: center;
+}
+.imageDeContact{
+    text-align: center;
+}
+
+.contact-image {
+  width: 20%;
+
+}
+.form{
+width: 100%;
+}
+.top{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.top input{
+  margin-left: 10px;
+  width: 60%;
+  margin-top: 10px;
+  height: 3em;
+  border: #6290C3 solid 2px;
+}
+.bot{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.bot textarea{
+  margin-top: 10px;
+  width: 90%;
+  resize: none;
+  height: 7em;
+  border: #6290C3 solid 2px;
+}
+
+.submit{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit input{
+  background-color: #6290C3;
+  color: #252829;
+  width: 10em;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 10%;
+  border: #252829 solid 2px;
+}
+                    /* contact*/
+/* copyright*/
+.copyright{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.copyright p {
+  font-size: 13px;
+}
+/* copyright*/
+/* footer*/
+
+/* media query  index/accueil*/
+@media only screen and (max-width: 600px){
+ .image{
+  width: 100%;
+ }
+ .contact-image {
+   width: 100%;
+
+ }
+  .navbar{
+    display: none;
+  }
+  .navbarResponsive{
+    display: flex;
+  }
+  .firstContact {
+      height: 50px;
+      width: 100%;
+  
+    }
+  
+    .left {
+      margin-left: 10px;
+      width: 50%;
+    }
+  
+    .right {
+      text-align: right;
+      width: 50%;
+      margin-right: 10px;
+    }
+  
+    .firstIcones {
+      width: 20px;
+      margin-left: 10px;
+    }
+}
+/***********************************Page accueil/navbar********************************************/
+/***********************************Création de site web********************************************/
+/* POURQUOI */
+.pourquoi{
+  background-color: #252829;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.pourquoi h1{
+  margin: 15px;
+}
+.pourquoi p{
+  color: white;
+  margin: 50px;
+  font-size: 22px;
+}
+/* POURQUOI */
+/* Explication */
+.explication{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 30px;
+  
+}
+.explication h1{
+  background-color: #252829 ;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  
+}
+.explication ul{
+  font-size: 22px;
+  margin-bottom: 10px;
+
+}
+.explication ul li{
+
+  margin: 30px;
+  
+
+}
+
+.explication h2{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline 3px #6290C3 ;
+  text-underline-offset: 8px;
+    line-height: 2em;
+    
+}
+
+.boxExplication .explication p{
+  font-size: 1.5em;
+}
+.resume{
+  margin: 10px;
+  padding: 10px;
+  border: #252829 solid 5px;
+}
+.resume ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: black;
+}
+.resume ol li{
+  font-size: 18px;
+
+}
+.resume ol a{
+  text-decoration: none;
+  color: black;
+}
+
+/* REALISATION */
+.boxRealisation {
+  background-color: #252829;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.Textrealisation{
+width: 100%;
+text-align: center;
+
+}
+
+.boxRealisation p{
+  color: white;
+}
+.Textrealisation h1{ 
+  color: #6290C3;
+}
+.realisation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-top: 20px;
+ 
+} 
+
+.real{
+border: inset;
+width: 100%;
+margin-left: 5px;
+margin-top: 50px;
+} 
+.realImageBox{
+display:flex;
+justify-content: center;
+align-items: center;
+
+} 
+.realImage{
+width: 30%;
+} 
+.realTitle{
+color: #252829;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+} 
+.realTitle a{
+color: #6290C3;
+border: #252829 solid 2px;
+width: 50%;
+text-align: center;
+margin-top: 10px;
+} 
+
+
+
+
+/* REALISATION */
+/* Explication */
+/***********************************Création de site web********************************************/
+/* RESPONSIVE */
+@media only screen and (min-width: 1400px) {
+ 
+  
+.Presentation {
+    flex-direction: row;
+    
+  }
+  .preuve {
+  display: flex;
+  margin-bottom: 20px;   
+  }
+  .presText{
+    font-size: 1.5em;
+  }
+  .PreuveBox {
+    margin-left: 10px;
+  }
+
+
+  .PreuveBox p {
+    font-size: 1.2em;
+  }
+
+  /* Acceuil présentation*/
+  /* Acceuil présentation2*/
+  .marketing {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+
+  /* Acceuil présentation2*/
+  /* Pourquoi moi ?*/
+  /* Pourquoi moi ?*/
+  /* Footer*/
+  /* contact*/
+  .contact {
+    background-color: #252829;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+
+  }
+
+  .contact h1 {
+    color: #6290C3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+.contact p{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+}
+  .imageDeContact {
+    text-align: center;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+    width: 20%;
+    text-align: center;
+   
+    
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .top input {
+    margin-left: 10px;
+    width: 15%;
+    margin-top: 10px;
+    height: 3.5em;
+    border: #6290C3 solid 2px;
+  }
+
+  .bot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bot textarea {
+    margin-top: 10px;
+    width: 50%;
+    resize: none;
+    height: 6em;
+    border: #6290C3 solid 2px;
+  }
+
+  .submit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submit input {
+    background-color: #6290C3;
+    color: #252829;
+    width: 10em;
+    height: 2em;
+    font-size: 1em;
+    border-radius: 10%;
+    border: #252829 solid 2px;
+  }
+
+  /* contact*/
+  /* copyright*/
+  .copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .copyright p {
+    font-size: 13px;
+  }
+
+  /* copyright*/
+  /* footer*/
+
+
+  /***********************************Page accueil/navbar********************************************/
+
+  /* REALISATION */
+    .boxRealisation {
+      background-color: #252829;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .Textrealisation {
+      width: 40%;
+      font-size: 2em;
+    }
+  
+    .boxRealisation p {
+      color: white;
+    }
+  
+    .Textrealisation h1 {
+      color: #6290C3;
+    }
+  
+    .realisation {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      margin-top: 20px;
+  
+    }
+  
+    .real {
+      border: inset;
+      width: 33.33%;
+      margin-left: 5px;
+    }
+  
+    .realImageBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .realImage {
+      width: 30%;
+    }
+  
+    .realTitle {
+      color: #252829;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .realTitle a {
+      color: #6290C3;
+      border: #252829 solid 2px;
+      width: 50%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  /* REALISATION */
+  /***********************************Création de site web********************************************/
+  /* POURQUOI */
+  .pourquoi {
+  
+    flex-direction: row;
+
+  }
+
+    .pourquoi h1{
+      width: 70%;
+    }
+
+  .pourquoi p {
+    width:  70%;
+    font-size: 1.5em;
+  }
+
+  /* POURQUOI */
+  /* Explication */
+  .explication {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+
+  }
+  .a{
+    background-color: #252829;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+  .boxExplication{
+    width: 100%;
+    background-color: white;
+
+  }
+
+  .col{
+      width: 20%;
+      background-color: #252829;
+      height: 100%;
+
+      
+  }
+
+  .explication h1 {
+    background-color: #252829;
+    border-radius: 10px;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+  }
+  .explication ul {
+    font-size: 22px;
+    margin-bottom: 10px;
+
+  }
+
+  .explication ul li {
+
+    margin: 30px;
+
+
+  }
+
+  .explication h2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline 3px #6290C3;
+    text-underline-offset: 8px;
+    line-height: 2em;
+
+  }
+
+  .boxExplication .explication p {
+    font-size: 1.5em;
+    width: 70%;
+  }
+
+  .resume {
+    margin: 10px;
+    padding: 10px;
+    border: #252829 solid 5px;
+    
+  }
+
+  .resume ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    margin-left: 30px;
+  }
+
+  .resume ol li {
+    font-size: 18px;
+
+  }
+
+  .resume ol a {
+    text-decoration: none;
+    color: black;
+  }
+}
+/* RESPONSIVE */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de contact  -->
+  <div class="firstContact" id="retour">
+    <div class="left">
+      <span><a href="tel:+33682632248">06 82 63 22 48</a></span>
+      |
+      <span><a href="mailto:Victor.courtehoute@gmail.com"> Victor.courtehoute@gmail.com</a></span>
+    </div>
+    <div class="right">
+      <a href="tel:+33682632248">
+        <img class="firstIcones" src="icones/phone.png" alt="téléphone">
+      </a>
+      <a href="mailto:Victor.courtehoute@gmail.com">
+        <img class="firstIcones" src="icones/mail.png" alt="e-mail">
+      </a>
+    </div>
+  </div>
+  <!-- Barre de contact  -->
+  <!-- Barre de navigation   -->
+  <div class="navbar">
+    <a class="left" href="index.html">
+      <img src="icones/logo.png" alt="logo developpeur web VWDC" width="50px" height="50px">
+    </a>
+  
+    <div class="dropdown">
+      <button class="dropbtn">Mes services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Création.html">Création de site internet</a>
+        <a href="Refonte.html">Refonte de site internet</a>
+      </div>
+    </div>
+    <a href="Réalisation.html">Mes réalisations</a>
+    <a href="contact.html">Contact</a>
+  
+  </div>
+  
+  
+  <!-- Barre de navigation   -->
+  <!-- Barre de navigation Responsive   -->
+  <div class="navbarResponsive">
+    <a href="index.html">
+      <img src="icones/logo.png" alt="logo developpeur web VWDC" width="50px" height="50px">
+  
+    </a>
+    <img class="responsiveImage" src="icones/navbar.png" alt="Barre de navigation" onclick="responsive()">
+  </div>
+  <div id="navbarItem" class="navbarItem" style="display:none;">
+    <a href="Création.html">Création de site internet</a>
+    <a href="Refonte.html">Refonte de site internet</a>
+    <a href="Réalisation.html">Mes réalisations</a>
+    <a href="contact.html">Contact</a>
+  
+  </div>
+  <script src="app.js"></script>
+  <!-- Barre de navigation Responsive  -->
+
+  <!-- Contact  -->
+  <div class="contact">
+  
+    <h1> Votre projet commence ici !</h1>
+    <p>Contactez moi et recevez une réponse dans la journée </p>
+    <br><br>
+  
+    <div class="form" >
+      <form action="POST" data-netlify="true">
+      <div class="top">
+        <input type="text" name="name" required placeholder="Prénom et nom">
+        <br>
+        <input type="text"  name="link" placeholder="Lien de votre site acutel">
+        <br>
+        <input type="email" name="email" required placeholder="Adresse email">
+        <br>
+        <input type="tel" name="phone" required placeholder="Numéro de téléphone">
+        <br>
+      </div>
+      <div class="bot">
+        <br><br>
+        <textarea  name="message"  required placeholder="Expliquez moi votre projet !"></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit">
+      </div>
+      </form>
+    </div>
+    <a href="#retour"><img class="contact-image" src="image/Video call-bro.png"
+        alt=" Contactez moi pour réaliser votre site web"></a>
+
+  </div>
+  <!-- Contact  -->
+</body>
+</html>

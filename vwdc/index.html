@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VWDC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="icones/logo.png" type="image/x-icon">
+
+
+</head>
+<body>
+  <!-- Barre de contact  -->
+  <div class="firstContact" id="retour">
+    <div class="left">
+      <span><a href="tel:+33682632248">06 82 63 22 48</a></span>
+      |
+      <span><a href="mailto:Victor.courtehoute@gmail.com"> Victor.courtehoute@gmail.com</a></span>
+    </div>
+    <div class="right">
+      <a href="tel:+33682632248">
+        <img class="firstIcones" src="icones/phone.png" alt="téléphone">
+      </a>
+      <a href="mailto:Victor.courtehoute@gmail.com">
+        <img class="firstIcones" src="icones/mail.png" alt="e-mail">
+      </a>
+    </div>
+  </div>
+  <!-- Barre de contact  -->
+  <!-- Barre de navigation   -->
+  <div class="navbar">
+    <a class="left" href="index.html">
+      <img src="icones/logo.png" alt="logo developpeur web VWDC" width="50px" height="50px">
+      </a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Mes services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Création.html">Création de site internet</a>
+          <a href="Refonte.html">Refonte de site internet</a>
+        </div>
+      </div>
+      <a href="Réalisation.html">Mes réalisations</a>
+      <a href="contact.html">Contact</a>
+    
+  </div>
+
+
+  <!-- Barre de navigation   -->
+  <!-- Barre de navigation Responsive   -->
+  <div class="navbarResponsive">
+    <a href="index.html">
+      <img class="logo" src="icones/logo.png" alt="logo developpeur web VWDC" width="50px" height="50px">
+
+    </a>
+    <img class="responsiveImage" src="icones/navbar.png" alt="Barre de navigation" onclick="responsive()">
+  </div>
+  <div id="navbarItem" class="navbarItem" style="display:none;">
+      <a href="Création.html">Création de site internet</a>
+      <a href="Refonte.html">Refonte de site internet</a>
+      <a href="Réalisation.html">Mes réalisations</a>
+      <a href="contact.html">Contact</a>
+
+  </div>
+  <script src="app.js"></script>
+  <!-- Barre de navigation Responsive  -->
+  <!-- Acceuil Présentation  -->
+  <div class="Presentation">
+    <div class="presText">
+      <h1>Développeur web indépendant</h1>
+      <br><br>
+      <p>Vous avez besoin d'un Developpeur web pour la création de votre site internet <br>
+        d'entreprise ou personnel ?</p>
+      <p>Prenez <a href="contact.html">contact !</a></p>
+    </div>
+    <img class="image" src="image/Code typing-bro.png" alt=" Developper code votre site web" >
+  </div>
+ 
+<br><br>
+<div class="preuve">
+  <div class="PreuveBox">
+    <h2>Site web responsive</h2>
+    <p>Il est primordiale que votre site web s'adapte à tous les appareils que nous utilisons aujourd'hui, téléphone, tablette et ordinateur !</p>
+  </div>
+  <div class="PreuveBox">
+    <h2>Une expérience personnalisée</h2>
+    <p>Je vous accompagne sur la partie technique de votre site interne, vous guide et prévois des fonctionnalités interresante pour votre business</p>
+  </div>
+  <div class="PreuveBox">
+    <h2>Un référencement optimisé</h2>
+    <p>Vous cherchez à être trouvé en premier sur google ? je vous aide à optimiser votre site web et utiliser les bons mots clés !</p>
+  </div>
+</div>
+
+  <!-- Acceuil Présentation  -->
+
+
+  <!-- Acceuil Présentation 2  -->
+<div class="marketing">
+<img class="image" src="image/Site Stats-rafiki.png" alt="Analyse des besoin pour la création de site web">
+  <div class="PresMarketing">
+    <h1> Developpeur marketing <br>et commercial</h1>
+    <br><br>
+    <p>Muni d'une licence de developpeur marketing et commerciale, je peux vous aider à mieux appréhender votre projet </p>
+  <br><br>
+  </div>
+
+</div>
+
+<div class="preuve">
+  <div class="PreuveBox">
+    <h2>Un accompagnement sur-mesure</h2>
+    <p>Je peux vous aider sur la partie marketing de votre site web, l'impacte de votre logo, la puissance de votre
+      communication et la pertinance de votre offre </p>
+  </div>
+  <div class="PreuveBox">
+    <h2>Comprendre votre besoin</h2>
+    <p>Loin d'être uniquement le réalisateur de votre projet, je peux comprendre votre besoin à la perfection, que se soit pour attirer des clients, vendre des produits, fidéliser une clientèle... </p>
+  </div>
+  <div class="PreuveBox">
+    <h2>La communication</h2>
+    <p>Ayant pratiquer les publicités via facebook, instagram ou encore linkedin, je peux vous aiguiller sur la pertinance de votre publicité </p>
+  </div>
+</div>
+  <!-- Acceuil Présentation 2  -->
+  <!-- Footer  -->
+  <!-- Contact  -->
+  <div class="contact">
+  
+    <h1> Votre projet commence ici !</h1>
+    <br>
+    <p>Contactez moi et recevez une réponse dans la journée </p>
+    <br><br>
+  
+    <div class="form">
+      <form action="POST" data-netlify="true">
+        <div class="top">
+          <input type="text" name="name" required placeholder="Prénom et nom">
+          <br>
+          <input type="text" name="link"  required ="Lien de votre site">
+          <br>
+          <input type="email" name="email" required placeholder="Adresse email">
+          <br>
+          <input type="tel" name="phone" required placeholder="Numéro de téléphone">
+          <br>
+        </div>
+        <div class="bot">
+          <br><br>
+          <textarea name="message" required placeholder="Expliquez moi votre projet !"></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Commencer !">
+        </div>
+      </form>
+    </div>
+    <div class="imageDeContact">
+      <a href="#retour"><img class="contact-image" src="image/Video call-bro.png" alt=" Contactez moi pour réaliser votre site web" ></a>
+    </div>
+  </div>
+
+  <!-- Contact  -->
+  <!-- Copyright  -->
+  <div class="copyright">
+    <p>Copyright 2023 © Victor courtehoute - Développeur Indépendant </p>
+  </div>
+  <!-- Copyright  -->
+
+  <!-- Footer  -->
+
+</body>
+</html>
